@@ -14,6 +14,10 @@ extension ThemeShortcuts on BuildContext {
   /// Returns the [TextStyle] for large headlines from the current text theme.
   TextStyle? get headlineLarge => textTheme.headlineLarge;
 
+  TextStyle? get bodyLarge => textTheme.bodyLarge;
+  TextStyle? get bodyMedium => textTheme.bodyMedium;
+  TextStyle? get bodySmall => textTheme.bodySmall;
+
   /// Returns the primary color from the current theme.
   Color? get primaryColor => Theme.of(this).primaryColor;
 }
