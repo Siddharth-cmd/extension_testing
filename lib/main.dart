@@ -38,12 +38,6 @@ class MyApp extends StatelessWidget {
               height: 200,
               width: 200,
             ),
-            Text(
-              "Hello",
-              style: TextStyle(
-                color: context.primaryColor,
-              ),
-            )
           ],
         ).scrollable(),
       ),
