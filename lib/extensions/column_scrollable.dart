@@ -14,12 +14,13 @@ extension ColumnScrollable on Column {
   ///
   /// Returns:
   /// A [ListView.builder] widget with the specified attributes and children from the [Column].
-  ListView scrollable({
-    ScrollController? controller,
-    ScrollPhysics? physics,
-    EdgeInsetsGeometry? padding,
-  }) {
+  ListView scrollable(
+      {ScrollController? controller,
+      ScrollPhysics? physics,
+      EdgeInsetsGeometry? padding,
+      bool? shrinkWrap}) {
     return ListView.builder(
+      shrinkWrap: shrinkWrap ?? false,
       controller: controller,
       physics: physics,
       padding: padding,
