@@ -1,5 +1,6 @@
 import 'package:extension_testing/extensions/app_bar_adaptive.dart';
 import 'package:extension_testing/extensions/row_scrollable.dart';
+import 'package:extension_testing/extensions/text_theme.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(const MyApp());
@@ -37,6 +38,12 @@ class MyApp extends StatelessWidget {
               height: 200,
               width: 200,
             ),
+            Text(
+              "Hello",
+              style: TextStyle(
+                color: context.primaryColor,
+              ),
+            )
           ],
         ).scrollable(),
       ),
