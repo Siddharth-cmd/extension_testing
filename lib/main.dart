@@ -1,4 +1,4 @@
-import 'package:extension_testing/extensions/app_bar.dart';
+import 'package:extension_testing/extensions/app_bar_adaptive.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(const MyApp());
@@ -11,9 +11,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Material App',
       home: Scaffold(
-        appBar: AppBar().onIOS(
-          title: "Title",
-        ),
+        appBar: AppBar(
+          title: const Text("Home"),
+          leading: const Text("Anything"),
+        ).onIOS(),
       ),
     );
   }
