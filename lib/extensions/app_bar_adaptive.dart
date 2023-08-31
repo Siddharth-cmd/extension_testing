@@ -14,6 +14,7 @@ extension AppBarAdaptive on AppBar {
   /// for maintaining design consistency across iOS devices.
   PreferredSizeWidget onIOS() {
     return CupertinoNavigationBar(
+      key: key,
       middle: title,
       leading: leading,
       backgroundColor: backgroundColor,
